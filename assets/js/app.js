@@ -1,7 +1,7 @@
 // --------------------------------------------------------------
 // TYPEWRITER EFFECT
 // --------------------------------------------------------------
-//
+
 document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter
   var dataText = [
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     "Html/Css",
     "JavaScript",
     "Python/Django",
-    "Web Development.",
+    "Web Development",
   ];
 
   // type one text in the typwriter
@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (i < text.length) {
       // add next character to h1
       document.querySelector("h2").innerHTML =
-        text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+        text.substring(0, i + 1) +
+        '<span class="type2" aria-hidden="true"></span>';
 
       // wait for a while and call this function again for next character
       setTimeout(function () {
@@ -52,10 +53,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
   StartTextAnimation(0);
 });
 
+
 // --------------------------------------------------------------
 // Countdown Timer - w3school
 // --------------------------------------------------------------
-//
+
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
@@ -84,11 +86,10 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-
 // --------------------------------------------------------------
 // Slow Typewriter - w3school
 // --------------------------------------------------------------
-//
+
 var i = 0;
 var txt = 'if the_world_is_flat := True: print("Be careful not to fall off!")';
 var speed = 50;
@@ -102,3 +103,23 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+// --------------------------------------------------------------
+// Sidenav Push
+// --------------------------------------------------------------
+//
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("sideClose").style.display = "None";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+  document.getElementById("sideClose").style.display = "block";
+  document.body.style.backgroundColor = "white";
+}
