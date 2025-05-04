@@ -1,0 +1,124 @@
+body,
+html {
+  /* background-color: #120439; */
+  height: 100%;
+  font-family: "tradegothiclt-bold", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.type2 {
+  border-right: 0.5em solid dodgerblue;
+  animation: caret 1s steps(1) infinite;
+}
+
+a {
+  color: white;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.bgimg {
+  background-image: url("../img/jr-korpa-9XngoIpxcEo-unsplash-3.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: limegreen;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  font-size: 0.85em;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Side bar */
+span {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  padding: 16px;
+}
