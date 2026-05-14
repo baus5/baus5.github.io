@@ -1,121 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Website | Welcome to the matrix...</title>
 
-    <!-- (!!!) Add Core Open Graph Meta Tags -->
-    <meta name="description" content="" />
-    <meta name="author" content="John Doe" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Website | Welcome to the matrix...</title>
 
-    <!-- (!!!) Add Google Fonts -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- (!!!) Add Core Open Graph Meta Tags -->
+  <meta name="description" content="" />
+  <meta name="author" content="John Doe" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/nerd-face-favicon-32x32.png"
-    />
+  <!-- (!!!) Add Google Fonts -->
+  <link rel="stylesheet" href="style.css" />
 
-    <style>
-      body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-      }
+  <link rel="icon" type="image/png" sizes="32x32" href="/nerd-face-favicon-32x32.png" />
 
-      .main-container {
-        width: 100%;
-        max-width: 800px;
-        padding: 1rem;
-      }
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
 
-      main {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        background-color: aqua;
-        color: blue;
+    .main-container {
+      width: 100%;
+      max-width: 800px;
+      padding: 1rem;
+    }
 
-        padding-top: 50px;
-        padding-bottom: 100px;
-        padding-left: 20px;
-      }
+    main {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: aqua;
+      color: blue;
 
-      nav ul {
-        margin: 0;
-        padding: 0;
-        text-align: right;
-      }
+      padding-top: 50px;
+      padding-bottom: 100px;
+      padding-left: 20px;
+    }
 
-      nav > ul > li {
-        list-style: none;
-        display: inline;
+    nav ul {
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
 
-        color: darkblue;
+    nav>ul>li {
+      list-style: none;
+      display: inline;
 
-        text-transform: lowercase;
-        font-size: large;
-        font-family: "Courier New", Courier, monospace;
-        text-decoration: line-through;
-      }
+      color: darkblue;
 
-      nav > ul > li:hover {
-        text-decoration: none;
-        cursor: pointer;
-      }
+      text-transform: lowercase;
+      font-size: large;
+      font-family: "Courier New", Courier, monospace;
+      text-decoration: line-through;
+    }
 
-      nav > ul > li:active {
-        text-decoration: none;
-        cursor: progress;
-      }
+    nav>ul>li:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-      /* (!!!) Fix its position later */
-      footer {
-        margin-top: 80%;
-      }
+    nav>ul>li:active {
+      text-decoration: none;
+      cursor: progress;
+    }
 
-      footer p {
-        text-align: center;
-        font-style: italic;
-      }
-    </style>
-  </head>
+    /* (!!!) Fix its position later */
+    footer {
+      margin-top: 80%;
+    }
 
-  <body>
-    <div class="main-container">
-      <header></header>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Code</li>
-          <li>Design</li>
-          <li>Fun</li>
-        </ul>
-      </nav>
+    footer p {
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
+</head>
 
-      <main>
-        <section>
-          <h1>Hello, world 👋</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-      </main>
+<body>
+  <div class="main-container">
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="resume.html">_resume</a></li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Code</li>
+        <li>Design</li>
+        <li>Fun</li>
+      </ul>
+    </nav>
 
-      <div class="temporary-container" style="text-decoration: line-through">
-        <p>
-          <a href="./old-website/index.html" style="text-decoration: none"
-            >Go to Old version</a
-          >
-        </p>
-      </div>
+    <main>
+      <section>
+        <h1>Hello, world 👋</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+    </main>
 
-      <footer>
-        <p>This is a footer</p>
-      </footer>
+    <div class="temporary-container" style="text-decoration: line-through">
+      <p>
+        <a href="./old-website/index.html" style="text-decoration: none">Go to Old version</a>
+      </p>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <footer>
+      <p>This is a footer</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
