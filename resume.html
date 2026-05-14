@@ -20,7 +20,28 @@
         width: 100%;
         max-width: 800px;
         padding: 1rem;
+
+        display: grid;
+        /* Defines 30% for first col, 70% for second */
+        grid-template-columns: 30% 70%;
+        /* Optional: adds space between columns */
+        gap: 20px;
       }
+
+      .grid-container {
+        display: grid;
+        /* Defines 30% for first col, 70% for second */
+        grid-template-columns: 30% 70%;
+        /* Optional: adds space between columns */
+        gap: 20px;
+      }
+
+      /* Optional styling for visibility */
+      /* .left-col,
+      .right-col {
+        padding: 20px;
+        background-color: #f0f0f0;
+      } */
 
       section h2 {
         color: yellow;
@@ -33,12 +54,14 @@
 
     <div class="main-container">
       <main>
-        <section class="ascii">
-          <!-- ascii profile image dont indent -->
-          <pre>
+        <div class="grid-left-col">
+          <section class="ascii">
+            <!-- ascii profile image dont indent -->
+
+            <pre>
             .'^l<;            
            uYvJO0J)"          
-          fmQCYvxnu{          
+          fmQCYvxnu{         who am i?
           \1,]x:,+\xl         
           \r}nC//uzx/>        
           )c\}l?(|f)]`        
@@ -50,37 +73,115 @@
     ``''``" vM*a#w' ' .''..   
    .   ..'^ Y#kaol '  '       
           ' Y*kW) .         ^
-          </pre>
-        </section>
-
-        <section class="title">
-          <h2>Baus</h2>
-          <p>&gt; Front-end develoepr</p>
-          <p>&gt; Python Developer</p>
-        </section>
-
-        <section>
-          <p>baus5.github.com</p>
-        </section>
-
-        <article>
-          <section class="profile">
-            <h2>Profile</h2>
-            <p>
-              Multidisciplinary junior developer with a background in landscape
-              architecture and sales, now focused on frontend systems and
-              Python-driven AI workflows. I work at the intersection of design
-              and code, learning through building real projects and translating
-              complex ideas into simple, usable digital experiences.
-            </p>
+          </pre
+            >
           </section>
 
-          <section class="skills">
-            <h2>Technical Skills</h2>
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, Svelte, React, Next.js, Tailwind CSS</p>
+          <section class="title">
+            <h2>Baus</h2>
+            <p>&gt; Front-end develoepr</p>
+            <p>&gt; Python Developer</p>
           </section>
-        </article>
+
+          <section>
+            <p>baus5.github.com</p>
+          </section>
+        </div>
+
+        <div class="grid-right-col">
+          <article>
+            <section class="profile">
+              <h2>Profile</h2>
+              <p>
+                Multidisciplinary junior developer with a background in
+                landscape architecture and sales, now focused on frontend
+                systems and Python-driven AI workflows. I work at the
+                intersection of design and code, learning through building real
+                projects and translating complex ideas into simple, usable
+                digital experiences.
+              </p>
+            </section>
+
+            <section class="skills">
+              <h2>Technical Skills</h2>
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript, Svelte, React, Next.js, Tailwind CSS</p>
+            </section>
+
+            <!-- TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST -->
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                ipsa deleniti qui, ut earum vel vitae. Delectus, ipsam quas.
+                Ipsa corporis veniam recusandae perferendis enim similique
+                praesentium maiores deleniti! Minus?
+              </p>
+            </section>
+          </article>
+        </div>
       </main>
     </div>
   </body>
