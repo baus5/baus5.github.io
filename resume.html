@@ -63,6 +63,25 @@
       section h2 {
         color: yellow;
       }
+
+      /* Matrix test */
+      .matrix-test {
+        background: #050505;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      #matrixText {
+        /* color: #00ff88; */
+        color: rgb(0, 255, 17);
+        font-size: 1.2em;
+        letter-spacing: 3px;
+        text-shadow: 0 0 6px #00ff88;
+      }
     </style>
   </head>
 
@@ -73,12 +92,12 @@
       <main>
         <div class="grid-left-col">
           <section class="ascii">
-            <!-- ascii profile image dont indent -->
 
-            <pre>
+            <!-- ascii profile image dont indent -->
+            <pre id="matrixText">
             .'^l<;            
            uYvJO0J)"          
-          fmQCYvxnu{         who am i?
+          fmQCYvxnu{        who am i?
           \1,]x:,+\xl         
           \r}nC//uzx/>        
           )c\}l?(|f)]`        
@@ -92,6 +111,10 @@
           ' Y*kW) .         ^
           </pre
             >
+          </section>
+
+          <section class="matrix-test">
+            <p id="matrixText">SYSTEM ONLINE</p>
           </section>
 
           <section class="title">
@@ -201,5 +224,42 @@
         </div>
       </main>
     </div>
+    <script>
+      const el = document.getElementById("matrixText");
+      const original = (el.dataset.value = el.innerText);
+
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+      let iteration = 0;
+
+      function animateText() {
+        const interval = setInterval(() => {
+          el.innerText = original
+            .split("")
+            .map((char, index) => {
+              if (index < iteration) {
+                return original[index];
+              }
+
+              return chars[Math.floor(Math.random() * chars.length)];
+            })
+            .join("");
+
+          iteration += 1 / 3;
+
+          if (iteration >= original.length) {
+            clearInterval(interval);
+
+            // restart animation forever
+            setTimeout(() => {
+              iteration = 0;
+              animateText();
+            }, 800);
+          }
+        }, 1);
+      }
+
+      animateText();
+    </script>
   </body>
 </html>
